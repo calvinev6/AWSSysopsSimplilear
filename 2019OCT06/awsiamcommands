@@ -1,0 +1,71 @@
+     o put-group-policy
+
+       o put-role-permissions-boundary
+
+       o put-role-policy
+
+       o put-user-permissions-boundary
+
+       o put-user-policy
+
+       o remove-client-id-from-open-id-connect-provider
+
+       o remove-role-from-instance-profile
+
+       o remove-user-from-group
+
+       o reset-service-specific-credential
+
+       o resync-mfa-device
+
+       o set-default-policy-version
+
+       o set-security-token-service-preferences
+
+       o simulate-custom-policy
+
+       o simulate-principal-policy
+
+       o tag-role
+
+       o tag-user
+
+       o untag-role
+
+       o untag-user
+
+       o update-access-key
+
+       o update-account-password-policy
+
+       o update-assume-role-policy
+
+       o update-group
+
+       o update-login-profile
+
+       o update-open-id-connect-provider-thumbprint
+
+       o update-role
+
+       o update-role-description
+
+       o update-saml-provider
+
+       o update-server-certificate
+
+       o update-service-specific-credential
+
+       o update-signing-certificate
+
+       o update-ssh-public-key
+
+       o update-user
+
+       o upload-server-certificate
+
+       o upload-signing-certificate
+
+       o upload-ssh-public-key
+
+       o wait

@@ -1,0 +1,553 @@
+Secret Access Key:iLoL7yRWDczE6LQnO1nBeMknNYqfh82omBdjgx4o
+Access Key: AKIAWYKUZH7ZTQTIFVCI
+Username: gegesman8976
+Password: Ebo123
+Username:boondocks123
+Ebo123#Ebo123#
+Access Key2: AKIAXZZVOIPYMGJTUBXR
+Secret Access Key2: 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
+Calvins-MBP:AWSSysopsSimplilear Calvinsmac$ touch notes.txt
+Calvins-MBP:AWSSysopsSimplilear Calvinsmac$ vi notes.txt
+Calvins-MBP:AWSSysopsSimplilear Calvinsmac$ cd
+Calvins-MBP:~ Calvinsmac$ aws --version
+aws-cli/1.16.250 Python/3.7.4 Darwin/18.7.0 botocore/1.12.240
+Calvins-MBP:~ Calvinsmac$ git --version
+git version 2.23.0
+Calvins-MBP:~ Calvinsmac$ ls -lrt aws_nvirginia_keys.pem
+ls: aws_nvirginia_keys.pem: No such file or directory
+Calvins-MBP:~ Calvinsmac$ cd Downloads
+Calvins-MBP:Downloads Calvinsmac$ ls -lrt aws_nvirginia_keys
+ls: aws_nvirginia_keys: No such file or directory
+Calvins-MBP:Downloads Calvinsmac$ ls -lrt aws_nvirginia_keys.pem
+-rw-r--r--@ 1 Calvinsmac  staff  1692 Oct  7 09:19 aws_nvirginia_keys.pem
+Calvins-MBP:Downloads Calvinsmac$ chmod 400 aws_nvirginia_keys.pem
+Calvins-MBP:Downloads Calvinsmac$ ls -lrt  aws_nvirginia_keys.pem
+-r--------@ 1 Calvinsmac  staff  1692 Oct  7 09:19 aws_nvirginia_keys.pem
+Calvins-MBP:Downloads Calvinsmac$ ssh -i "aws_nvirginia_keys.pem" ec2-user@ec2-34-235-170-185.compute-1.amazonaws.com
+The authenticity of host 'ec2-34-235-170-185.compute-1.amazonaws.com (34.235.170.185)' can't be established.
+ECDSA key fingerprint is SHA256:KzxAYwfnX25EYwLeVwpvRBnjs7ichAg0f2YqRbv5asE.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'ec2-34-235-170-185.compute-1.amazonaws.com,34.235.170.185' (ECDSA) to the list of known hosts.
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-ami/2018.03-release-notes/
+4 package(s) needed for security, out of 10 available
+Run "sudo yum update" to apply all updates.
+[ec2-user@ip-172-31-42-67 ~]$ aws --version
+aws-cli/1.16.102 Python/2.7.16 Linux/4.14.138-89.102.amzn1.x86_64 botocore/1.12.92
+[ec2-user@ip-172-31-42-67 ~]$ aws configure
+AWS Access Key ID [None]: AKIAWYKUZH7ZTQTIFVCI
+AWS Secret Access Key [None]: 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
+Default region name [None]: us-east-1
+Default output format [None]: table
+[ec2-user@ip-172-31-42-67 ~]$ 
+Broadcast message from root@ip-172-31-42-67
+        (unknown) at 14:41 ...
+
+The system is going down for power off NOW!
+Connection to ec2-34-235-170-185.compute-1.amazonaws.com closed by remote host.
+Connection to ec2-34-235-170-185.compute-1.amazonaws.com closed.
+Calvins-MBP:Downloads Calvinsmac$ ssh -i "aws_nvirginia_keys.pem" ec2-user@ec2-34-235-170-185.compute-1.amazonaws.com
+ssh: connect to host ec2-34-235-170-185.compute-1.amazonaws.com port 22: Operation timed out
+Calvins-MBP:Downloads Calvinsmac$ ssh -i "aws_nvirginia_keys.pem" ec2-user@ec2-34-235-170-185.compute-1.amazonaws.com
+ssh: connect to host ec2-34-235-170-185.compute-1.amazonaws.com port 22: Operation timed out
+Calvins-MBP:Downloads Calvinsmac$ ssh -i "aws_nvirginia_keys.pem" ec2-user@ec2-34-235-170-185.compute-1.amazonaws.com
+ssh: connect to host ec2-34-235-170-185.compute-1.amazonaws.com port 22: Operation timed out
+Calvins-MBP:Downloads Calvinsmac$ ls lrt aws_linuxserver1_keypair07OCT.pem
+ls: lrt: No such file or directory
+aws_linuxserver1_keypair07OCT.pem
+Calvins-MBP:Downloads Calvinsmac$ cd 
+Calvins-MBP:~ Calvinsmac$ cd Downloads
+Calvins-MBP:Downloads Calvinsmac$ ls -lrt aws_linuxserver1_keypair07OCT.pem
+-rw-r--r--@ 1 Calvinsmac  staff  1692 Oct  7 15:32 aws_linuxserver1_keypair07OCT.pem
+Calvins-MBP:Downloads Calvinsmac$ chmod 400 aws_linuxserver1_keypair07OCT.pem
+Calvins-MBP:Downloads Calvinsmac$ ls -lrt aws_linuxserver1_keypair07OCT.pem
+-r--------@ 1 Calvinsmac  staff  1692 Oct  7 15:32 aws_linuxserver1_keypair07OCT.pem
+Calvins-MBP:Downloads Calvinsmac$ ssh -i "aws_linuxserver1_keypair07OCT.pem" ec2-user@ec2-54-235-34-206.compute-1.amazonaws.com
+aws ec2 run-instances --image-id ami-0dbbd6f952e12feba --count 1 --instance-type t2.micro --key-name aws_linuxserver1_keypair07OCT --security-groups awslinuxserver1secgroup 
+aws ec2 describe-instance-status --instance-id 		
+aws ec2 describe-instance-status --instance-id i-0266d286e606ebfd1
+i-0266d286e606ebfd1
+wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
+sudo sh –c ‘echo deb https://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list’
+ubuntu@ip-172-31-12-77:~$ java -version
+openjdk version "1.8.0_212"
+OpenJDK Runtime Environment (build 1.8.0_212-8u212-b03-0ubuntu1.16.04.1-b03)
+OpenJDK 64-Bit Server VM (build 25.212-b03, mixed mode)
+ubuntu@ip-172-31-12-77:~$ git -version
+Unknown option: -version
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+ubuntu@ip-172-31-12-77:~$ git --version
+git version 2.7.4
+ubuntu@ip-172-31-12-77:~$ sudo apt-get install nginx
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  nginx-common nginx-core
+Suggested packages:
+  fcgiwrap nginx-doc
+The following NEW packages will be installed:
+  nginx nginx-common nginx-core
+0 upgraded, 3 newly installed, 0 to remove and 232 not upgraded.
+Need to get 459 kB of archives.
+After this operation, 1,485 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/main amd64 nginx-common all 1.10.3-0ubuntu0.16.04.4 [26.9 kB]
+Get:2 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/main amd64 nginx-core amd64 1.10.3-0ubuntu0.16.04.4 [429 kB]
+Get:3 http://us-east-1.ec2.archive.ubuntu.com/ubuntu xenial-updates/main amd64 nginx all 1.10.3-0ubuntu0.16.04.4 [3,498 B]
+Fetched 459 kB in 0s (19.5 MB/s)  
+Preconfiguring packages ...
+Selecting previously unselected package nginx-common.
+(Reading database ... 224831 files and directories currently installed.)
+Preparing to unpack .../nginx-common_1.10.3-0ubuntu0.16.04.4_all.deb ...
+Unpacking nginx-common (1.10.3-0ubuntu0.16.04.4) ...
+Selecting previously unselected package nginx-core.
+Preparing to unpack .../nginx-core_1.10.3-0ubuntu0.16.04.4_amd64.deb ...
+Unpacking nginx-core (1.10.3-0ubuntu0.16.04.4) ...
+Selecting previously unselected package nginx.
+Preparing to unpack .../nginx_1.10.3-0ubuntu0.16.04.4_all.deb ...
+Unpacking nginx (1.10.3-0ubuntu0.16.04.4) ...
+Processing triggers for ureadahead (0.100.0-19.1) ...
+Processing triggers for systemd (229-4ubuntu21.21) ...
+Processing triggers for ufw (0.35-0ubuntu2) ...
+Setting up nginx-common (1.10.3-0ubuntu0.16.04.4) ...
+Setting up nginx-core (1.10.3-0ubuntu0.16.04.4) ...
+Setting up nginx (1.10.3-0ubuntu0.16.04.4) ...
+Processing triggers for ureadahead (0.100.0-19.1) ...
+Processing triggers for systemd (229-4ubuntu21.21) ...
+Processing triggers for ufw (0.35-0ubuntu2) ...
+ubuntu@ip-172-31-12-77:~$ nginx -v
+nginx version: nginx/1.10.3 (Ubuntu)
+ubuntu@ip-172-31-12-77:~$ wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
+OK
+ubuntu@ip-172-31-12-77:~$ sudo sh –c ‘echo deb https://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list’
+-bash: /etc/apt/sources.list’: Permission denied
+ubuntu@ip-172-31-12-77:~$ cd /etc/apt
+ubuntu@ip-172-31-12-77:/etc/apt$ ls -l
+total 80
+drwxr-xr-x 2 root root  4096 May 29 12:03 apt.conf.d
+drwxr-xr-x 2 root root  4096 Mar 14  2019 auth.conf.d
+drwxr-xr-x 2 root root  4096 Apr 14  2016 preferences.d
+-rw-r--r-- 1 root root  3352 Oct 10 00:20 sources.list
+drwxr-xr-x 2 root root  4096 Dec 12  2018 sources.list.d
+-rw-r--r-- 1 root root  3335 May 29 12:46 sources.list.save
+-rw-r--r-- 1 root root 27533 Oct 11 19:09 trusted.gpg
+-rw-r--r-- 1 root root 20829 Mar 10  2018 trusted.gpg~
+drwxr-xr-x 2 root root  4096 Jun 22  2018 trusted.gpg.d
+ubuntu@ip-172-31-12-77:/etc/apt$ cd
+ubuntu@ip-172-31-12-77:~$ cd
+ubuntu@ip-172-31-12-77:~$ sudo sh -c 'echo deb https://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list'
+ubuntu@ip-172-31-12-77:~$ sudo apt-get update
+Ign:1 http://dl.google.com/linux/chrome/deb stable InRelease
+Hit:2 http://dl.google.com/linux/chrome/deb stable Release
+Ign:3 https://pkg.jenkins.io/debian-stable binary/ InRelease
+Get:4 https://pkg.jenkins.io/debian-stable binary/ Release [2,042 B]
+Get:5 https://pkg.jenkins.io/debian-stable binary/ Release.gpg [181 B]            
+Hit:7 http://ppa.launchpad.net/hermlnx/xrdp/ubuntu xenial InRelease               
+Get:8 https://pkg.jenkins.io/debian-stable binary/ Packages [15.6 kB]
+Fetched 17.8 kB in 0s (55.5 kB/s)                        
+Reading package lists... Done
+ubuntu@ip-172-31-12-77:~$ sudo apt-get install jenkins
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Some packages could not be installed. This may mean that you have
+requested an impossible situation or if you are using the unstable
+distribution that some required packages have not yet been created
+or been moved out of Incoming.
+The following information may help to resolve the situation:
+
+The following packages have unmet dependencies:
+ jenkins : Depends: daemon but it is not installable
+E: Unable to correct problems, you have held broken packages.
+ubuntu@ip-172-31-12-77:~$ apt policy jenkins
+jenkins:
+  Installed: (none)
+  Candidate: 2.190.1
+  Version table:
+     2.190.1 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.176.4 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.176.3 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.176.2 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.176.1 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.164.3 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.164.2 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.164.1 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.150.3 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.150.2 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.150.1 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.138.4 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.138.3 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.138.2 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.138.1 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.121.3 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.121.2 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.121.1 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.107.3 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.107.2 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.107.1 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.89.4 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.89.3 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.89.2 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.89.1 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.73.3 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.73.2 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.73.1 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.60.3 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.60.2 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.60.1-1 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.60.1 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.46.2 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.46.1 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.32.3 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.32.2 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.32.1 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.19.4 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.19.2 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.19.1 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.7.4 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.7.3 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.7.2 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.651.2 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.651.1 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.642.4 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.642.3 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.642.2 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.642.1 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.625.3 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.625.2 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.609.3 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.609.2 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.609.1 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.596.3 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.596.2 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.596.1 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.580.3 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.580.2 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.580.1 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.565.3 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.554.3 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.532.3 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.532.2 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.532.1 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.509.4 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.509.2 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.509.1 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.480.3 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.480.2 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.480.1 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.466.2 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.466.1 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.447.2 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.447.1 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.424.6 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.424.5 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.424.4 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.424.2 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.424.1 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.409.2 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.409.1 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+ubuntu@ip-172-31-12-77:~$ add-apt-repository universe
+Error: must run as root
+ubuntu@ip-172-31-12-77:~$ sudo add-apt-repository universe
+'universe' distribution component enabled for all sources.
+ubuntu@ip-172-31-12-77:~$ sudo apt-get install jenkins
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Some packages could not be installed. This may mean that you have
+requested an impossible situation or if you are using the unstable
+distribution that some required packages have not yet been created
+or been moved out of Incoming.
+The following information may help to resolve the situation:
+
+The following packages have unmet dependencies:
+ jenkins : Depends: daemon but it is not installable
+E: Unable to correct problems, you have held broken packages.
+ubuntu@ip-172-31-12-77:~$ grep universe /etc/apt/sources.list
+deb http://archive.ubuntu.com/ubuntu xenial universe
+ubuntu@ip-172-31-12-77:~$ sudo add-apt-repository universe
+'universe' distribution component is already enabled for all sources.
+ubuntu@ip-172-31-12-77:~$ sudo apt-get install jenkins
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Some packages could not be installed. This may mean that you have
+requested an impossible situation or if you are using the unstable
+distribution that some required packages have not yet been created
+or been moved out of Incoming.
+The following information may help to resolve the situation:
+
+The following packages have unmet dependencies:
+ jenkins : Depends: daemon but it is not installable
+E: Unable to correct problems, you have held broken packages.
+ubuntu@ip-172-31-12-77:~$ reboot
+Failed to set wall message, ignoring: Interactive authentication required.
+Failed to reboot system via logind: Interactive authentication required.
+Failed to start reboot.target: Interactive authentication required.
+See system logs and 'systemctl status reboot.target' for details.
+Failed to open /dev/initctl: Permission denied
+Failed to talk to init daemon.
+ubuntu@ip-172-31-12-77:~$ apt policy jenkins
+jenkins:
+  Installed: (none)
+  Candidate: 2.190.1
+  Version table:
+     2.190.1 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.176.4 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.176.3 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.176.2 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.176.1 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.164.3 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.164.2 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.164.1 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.150.3 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.150.2 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.150.1 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.138.4 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.138.3 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.138.2 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.138.1 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.121.3 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.121.2 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.121.1 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.107.3 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.107.2 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.107.1 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.89.4 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.89.3 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.89.2 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.89.1 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.73.3 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.73.2 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.73.1 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.60.3 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.60.2 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.60.1-1 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.60.1 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.46.2 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.46.1 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.32.3 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.32.2 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.32.1 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.19.4 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.19.2 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.19.1 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.7.4 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.7.3 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     2.7.2 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.651.2 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.651.1 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.642.4 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.642.3 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.642.2 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.642.1 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.625.3 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.625.2 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.609.3 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.609.2 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.609.1 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.596.3 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.596.2 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.596.1 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.580.3 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.580.2 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.580.1 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.565.3 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.554.3 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.532.3 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.532.2 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.532.1 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.509.4 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.509.2 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.509.1 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.480.3 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.480.2 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.480.1 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.466.2 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.466.1 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.447.2 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.447.1 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.424.6 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.424.5 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.424.4 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.424.2 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.424.1 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.409.2 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+     1.409.1 500
+        500 https://pkg.jenkins.io/debian-stable binary/ Packages
+ubuntu@ip-172-31-12-77:~$ packet_write_wait: Connection to 54.147.212.240 port 22: Broken pipe
+Calvins-MBP:~ Calvinsmac$ 
